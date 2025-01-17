@@ -3,18 +3,40 @@
 <head>
    <title>Question 2 - CSS</title>
    <style>
+    /* Shaoxian Duan Lab2 */
+  
+    
     .mainsection a {
-      text-decoration: none;
-      color: #414040;
+      text-decoration: underline; /* change to underline */
+      color: #866a6a;
       outline: none;
     }
-
     
+    .mainsection a:hover {
+      color: #0056b3; /* change the color when mouse hover */
+      text-decoration: none; /* remove the underline */
+    }
+
+    /* focus function */
+    .mainsection a:focus {
+      outline: 2px solid #FFA500; /* focus the text line */
+      outline-offset: 2px; 
+    }
+
+    h1 {
+      background-image: url("lab2/backgroundimg.gif"); 
+      width:300px;
+      background-size: cover; 
+      background-position: center; 
+      text-align: center; 
+      padding: 20px; 
+    }
     </style>
 </head>
 <body>
 <div class="mainsection">
-<h1><img src="lab2/lab2-imageoftext.gif" alt="Shopping categories"></h1>
+
+<h1>Shopping Categories </h1>
 
 <ul>
   <li><a href="#">Animals</a></li>
